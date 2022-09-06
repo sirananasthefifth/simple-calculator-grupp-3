@@ -5,7 +5,6 @@ let alive = true;
 let operator;
 let n1;
 let n2;
-let result;
 
 while (alive)
 {
@@ -24,10 +23,6 @@ while (alive)
     {
         break;
     }
-    if (n1 == "result")
-    {
-        n1 = result;
-    }
     n1 = parseInt(n1);
 
     n2 = (prompt("Skriv andra numret: "));
@@ -36,28 +31,20 @@ while (alive)
     {
         break;
     }
-    if (n2 == "result")
-    {
-        n2 = result;
-    }
     n2 = parseInt(n2);
 
     switch (operator) 
     {
         case '*' :
-            result = n1*n2;
             console.log(n1 * n2);
             break;
         case '+' :
-            result = n1+n2;
             console.log(n1 + n2);
             break;
         case '-' :
-            result = n1-n2;
             console.log(n1 - n2);
             break;
         case '/' :
-            result = n1/n2;
             console.log(n1 / n2);
             break;
     }
